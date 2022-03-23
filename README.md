@@ -4,15 +4,15 @@ Demo ExtJS
 
 ## Установка
 ```bash
+# docker 
+docker-compose up -d --build
+
 # laravel api
 composer install
 php artisan migrate
 
 # extjs app
 npm install
-
-# docker 
-docker-compose up -d --build
 ```
 ## Заупуск
 ```bash
