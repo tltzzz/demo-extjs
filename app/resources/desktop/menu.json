@@ -1,0 +1,7 @@
+{
+  "leaf": false,
+  "children": [
+    { "text": "Контакты", "iconCls": "x-fa fa-table", "xtype": "contactsgridview","leaf": true },
+    { "text": "Создать контакт", "iconCls": "x-fa fa-table", "xtype": "contactview","leaf": true }
+  ]
+}
