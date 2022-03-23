@@ -7,8 +7,6 @@ Ext.define('app.view.contacts.ContactViewController', {
     },
 
     addPhone: function() {
-        console.log('addPhone')
-
         const model = this.getViewModel()
         const phones = Object.values(model.get('phones'))
 
@@ -27,9 +25,6 @@ Ext.define('app.view.contacts.ContactViewController', {
     },
 
     onView: function (props) {
-        console.log('onView')
-        // console.log(props)
-
         const model = this.getViewModel()
         const contact = Ext.create('model.contactmodel', {id: parseInt(props.id)})
         contact.load({
@@ -62,7 +57,6 @@ Ext.define('app.view.contacts.ContactViewController', {
     },
 
     show: function () {
-        // console.log('show ContactViewController')
         const model = this.getViewModel()
         model.set('id', null)
         model.set('fio', '')
@@ -75,14 +69,7 @@ Ext.define('app.view.contacts.ContactViewController', {
         const id = model.get('id')
 
         if (id !== null ) {
-        
-            // record.set('phones', model.get('phones'))
-
             const phones = Object.values(model.get('phones'))
-            // console.log(phones)
-
-            // console.log(model.get('phoneValue1'))
-
             const arrayPhones = []
             phones.forEach(item => {
                 const id = item.name.split('_')[1]
@@ -111,7 +98,6 @@ Ext.define('app.view.contacts.ContactViewController', {
             })
         } else {
             let put = {
-                // id: model.get('id'),
                 fio: model.get('fio'),
                 comment: model.get('comment'),
             }

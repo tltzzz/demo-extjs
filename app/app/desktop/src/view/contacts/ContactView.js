@@ -30,8 +30,6 @@ Ext.define('app.view.contacts.ContactView',{
         },
         {
             xtype: 'fieldcontainer',
-            // label: 'Color',
-            // scrollable: true,
             defaultType: 'textfield',
             name: 'phones',
             bind: {
@@ -39,31 +37,7 @@ Ext.define('app.view.contacts.ContactView',{
                     bindTo: '{phones}',
                     deep: true
                 }
-            },
-            // defaults: {
-            // flex: 1
-            // },
-            // layout: 'hbox',
-            // items: [
-            //     {
-            //         label  : 'Blue',
-            //         name      : 'color1',
-            //         inputValue: 'blue',
-            //         // id        : 'radio4'
-            //     }, 
-            //     // {
-            //     //     boxLabel  : 'Grey',
-            //     //     name      : 'color2',
-            //     //     inputValue: 'grey',
-            //     //     // id        : 'radio5'
-            //     // }, 
-            //     // {
-            //     //     boxLabel  : 'Black',
-            //     //     name      : 'color3',
-            //     //     inputValue: 'black',
-            //     //     // id        : 'radio6'
-            //     // }
-            // ]
+            }
         },
         {
             xtype: 'button',
